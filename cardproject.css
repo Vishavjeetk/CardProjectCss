@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(whitesmoke, #B8D4E3);
+}
+
+
+
+header, footer {
+    background-color: #855A5C;
+    position: sticky;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header {
+    top: 0;
+    
+}
+
+footer {
+    bottom: 0;
+;
+}
+
+main {
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #EEFFDB;
+    color: #66101F;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: min(100%, 350px);
+    background-color: #F2EFE9;
+}
+
+.card img {
+    border: 5px double #333;
+    border-radius: 50%;
+}
+
+.card figcaption {
+    font-weight: bolder;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 400px) {
+
+    body {
+        color: white;
+        background-color: white; /* radial-gradient(blue, #B8D4E3); */
+        background-image: radial-gradient(white, grey);
+    }
+
+    main {
+        color: black;
+    }
+    
+}
