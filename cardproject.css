@@ -7,6 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* html tag will also inherit from this root tag */
+:root {
+    --HEADER-FOOTER-COLOR: #1e3b6e;
+}
 
 html {
     scroll-behavior: smooth;
@@ -29,10 +33,11 @@ body {
 
 
 header, footer {
-    background-color: #855A5C;
+    background-color: var(--HEADER-FOOTER-COLOR);
     position: sticky;
     font-size: 2rem;
     text-align: center;
+    color: white;
 }
 
 header {
@@ -122,6 +127,15 @@ nav a {
 }
 
 @media screen and (min-width: 806px) {
+    :root {
+        --HEADER-FOOTER-COLOR: #855A5C;
+    }
+
+    header, footer {
+        background-color: var(--HEADER-FOOTER-COLOR);
+        color: khaki;
+    }
+
     nav {
         display: none;
     }
