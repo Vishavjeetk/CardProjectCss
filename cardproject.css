@@ -136,6 +136,10 @@ nav a {
         color: khaki;
     }
 
+    footer {
+    --HEADER-FOOTER-COLOR: blue
+    }
+
     nav {
         display: none;
     }
